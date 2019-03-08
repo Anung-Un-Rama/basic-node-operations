@@ -1,0 +1,66 @@
+/////////Questions////////
+
+1. Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+- sort: this will return the file sorted by line alphabetically.
+
+  EX: Jareds-MacBook-Pro:basic-node-operations Jared$ sort command.js
+    process.stdout.write('\nprompt > ');
+    process.stdout.write(output);
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+const commandLibrary = {
+const fs = require("fs");
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+}
+};
+
+- wc: This will print a newline, wordcount, and byte count of the file.
+
+  EX: Jareds-MacBook-Pro:basic-node-operations Jared$ wc command.js
+      21      64     532 command.js
+
+- uniq: This will sort the lines in a file and only return lines that are different.
+
+  EX: Jareds-MacBook-Pro:basic-node-operations Jared$ uniq command.js
+const fs = require("fs");
+
+//write out data
+function done(output) {
+    process.stdout.write(output);
+    process.stdout.write('\nprompt > ');
+}
+
+//where we will store our commands
+function evaluateCmd(userInput) {
+ //parses the user input to understand which command was typed
+  const userInputArray = userInput.split(" ");
+  const command = userInputArray[0];
+}
+
+//where we will store the logic of our commands
+const commandLibrary = {
+};
+
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+
+
+2. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted.
+
+
+////////Programming Questions/////////
+
+3. Implement the head command in the commands.js file. The head command outputs the first n lines of a file (you may decide what n is). This function will be similar to cat in structure so it will be helpful to reference.
+
+4. Implement the tail command in the commands.js file. The tail command is the inverse of the head command. It outputs the last n lines of a file (you may decide what n is).
+
+5. It is possible that a user will input a non-existent command to our bash shell. Within commands.js create an errorHandler function which will output an error message if the command cannot be found.
+
+Hint: Use the default: case in your switch statement.
+
+6. In this checkpoint, you encountered built-in JavaScript methods as well as the new ES6 syntax. Review the information below before attempting the programming challenge.
